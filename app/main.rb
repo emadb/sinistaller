@@ -5,6 +5,7 @@ require 'sinatra/reloader' if development?
 
 class Sinistaller < Sinatra::Base
   set :port, 9003
+  set :server, 'thin'
 
   get '/' do
     "upload a file posting to /deploy"
